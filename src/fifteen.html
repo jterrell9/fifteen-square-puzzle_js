@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Part A) Payroll Report Generator</title>
+    <link href = "fifteen.css" rel = "stylesheet" type = "text/css" />
+</head>
+<body onload="setFifteen();setRandomBG();return false;">
+
+<div class="bar"></div>
+
+<h1 class="center">Fifteen Puzzle</h1>
+<p>The goal of the fifteen puzzle is to un-jumble its fifteen squares by repeatedly making moves that slide squares
+into the empty space.  How quickly can you solve it?</p>
+
+<div id="container">
+    <div id="box1" class="box" onclick="move(1,true); return false;">1</div>
+    <div id="box2" class="box" onclick="move(2,true); return false;">2</div>
+    <div id="box3" class="box" onclick="move(3,true); return false;">3</div>
+    <div id="box4" class="box" onclick="move(4,true); return false;">4</div>
+    <div id="box5" class="box" onclick="move(5,true); return false;">5</div>
+    <div id="box6" class="box" onclick="move(6,true); return false;">6</div>
+    <div id="box7" class="box" onclick="move(7,true); return false;">7</div>
+    <div id="box8" class="box" onclick="move(8,true); return false;">8</div>
+    <div id="box9" class="box" onclick="move(9,true); return false;">9</div>
+    <div id="box10" class="box" onclick="move(10,true); return false;">10</div>
+    <div id="box11" class="box" onclick="move(11,true); return false;">11</div>
+    <div id="box12" class="box" onclick="move(12,true); return false;">12</div>
+    <div id="box13" class="box" onclick="move(13,true); return false;">13</div>
+    <div id="box14" class="box" onclick="move(14,true); return false;">14</div>
+    <div id="box15" class="box" onclick="move(15,true); return false;">15</div>
+</div>
+
+<div class="center">
+    <form><button id="shuffleBtn" onclick="shuffleCount=0; shuffle(); return false;">Shuffle</button></form>
+    <div id="timer"></div>
+</div>
+
+<p>American puzzle author and mathematician Sam Lloyd is often falsely credited with creating the puzzle; indeed,
+Lloyd claimed from 1891 until his death in 1911 that he invented it. The puzzle was actually created around 1874 by
+Noyles Palmer Chapman, a postmaster in Canastota, New York.</p>
+
+
+<div class="bar"></div>
+
+<div id="newPopup" class="popup">
+    <div class="popupContent">
+        <span class="exit" onclick="closePopup();">&times;</span>
+        <p>Congratulations! you solved the puzzle</p>
+    </div>
+</div>
+
+<script src="fifteen.js"></script>
+</body>
+</html>
